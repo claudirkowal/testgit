@@ -1,0 +1,230 @@
+body{
+color: #0A3613;
+font-size: 16px;
+background-color: #F0FFF0;
+}
+
+h1, h2 { color: steelblue; font-family: 'Merienda One', cursive;}
+
+h3 {color: orangered; font-family: 'Merienda One', cursive;}
+
+p {
+  font-family: 'Jomolhari', serif;
+  }
+
+/*paragrafos do QUEM SOMOS*/
+.bordas {
+        border-left: 6px solid darkorange;
+        background-color: lightgrey;
+      }
+
+header  {background-color: steelblue; 
+				font-family: 'Text Me One', sans-serif;
+				color: white;
+				padding: 15px;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: center;
+				font-size: 28px;}
+
+footer  {
+    font-family: 'Text Me One', sans-serif;
+    color: steelblue;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;}
+				
+address {max-width: 250px;
+		margin: auto;
+		margin-top: 50px;
+		text-align: center;
+		}
+
+/*Listas Menu NAVEGAÇÃO--------------------------------------------------------------------------*/
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkorange;
+}
+
+
+li.a a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.a a:hover:not(.ativo) {
+  background-color: white;
+}
+
+.ativo {
+  background-color: white;
+}
+
+/*------------------------*/
+ol {
+  background-color: #FE642E;
+}
+
+ul.b {
+  background: gray;
+  padding: 20px;
+}
+
+
+li.b {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 2px 1px;
+  text-decoration: none;
+  background: #F7BE81;
+  margin: 5px;
+}
+li.b a:hover:not(.ativo) {
+  background-color: orange;
+}
+/*Fim das listas ---------------------------------------------------------------*/
+
+/*Tabelas*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+th {
+  color: white;
+  font-size: 22px;
+  background-color: steelblue
+}
+
+tr:nth-child(even) {background-color: white;}
+
+/*DIV para o titulo dos formulários*/
+div.formularios {
+  border: 3px solid darkorange;
+  padding: 25px 50px;
+  background-color: white;
+  color: orange; font-family: 'Merienda One', cursive; font-size: 22px;
+}
+/*Está em Dicas de viagens*/
+div.fixa {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 260px;
+  text-align: center;
+  border: 3px solid orange;
+  font-size: 11pt;
+  color: brown;
+  background-color: white;
+}
+
+/*Está na página Frota*/
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  color: blue;
+  font-size: 16pt;
+  border: 2px solid orange;
+}
+
+/*overflow está na página Quem Somos*/
+#overflow {
+  background: skyblue;
+  color: blue;
+  padding: 15px;
+  width: 50%;
+  height: 90px;
+  overflow: scroll;
+  border: 3px solid gray;
+  font-size: 14px;
+}
+/*para as IMAGENS*/
+.imagens {
+  margin: 20px 0 10px 350px;
+  padding: 30px;
+}
+
+/*Estilo para o contate-nos no meio do texto e para os botões VOLTAR*/
+
+  .botao:link, .botao:visited {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botao:hover, .botao:active {
+  background-color: white;
+}
+
+/*Link -usado no index*/
+
+a:link {
+  color: green;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: orange;
+}
+a:active {
+  color: blue;
+}
+
+.borda2{
+  outline: dashed 2px green;
+  }
+
+  /*Div para a galeria da frota---------------------------------*/
+
+div.galeria {
+  margin: 20px;
+  border: 2px solid gray;
+  float: right;
+  width: 400px;
+}
+
+div.galeria:hover {
+  border: 2px solid orange;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.legenda {
+  padding: 15px;
+  text-align: center;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Fim da Galeria---------------------------------------------------*/
+
