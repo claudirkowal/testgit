@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Claudir de Jesus Kowal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Merienda+One|Text+Me+One&display=swap" rel="stylesheet"> 
+		<title>Contato</title>
+		<link rel="shortcut icon" href="bus_ico.ico">
+
+		<style>
+				form * {
+						display: inline-table;
+						margin: 5px 10px;
+				}
+
+				select {
+						width: 175px;
+				}
+		</style>
+
+</head>
+<body>
+	<div class="formularios">Formulário para contato</div>
+
+	<form action="http://localhost/claudir/contato/" method="get">
+		<fieldset>
+			<legend>Preencha corretamente</legend><br>
+			<fieldset>
+				<legend>Dados pessoais</legend> <br>
+				Nome:<br>
+				    <input type="text" name="nome" value="Insira seu nome" autofocus> <br>
+				Sobrenome:<br>
+				    <input type="text" name="sobrenome"><br>
+        Data de nascimento: <br>
+          <input type="date" name="data" min="2001-09-01" max="2019-10-01"><br>
+				Sexo:<br>
+				    <fieldset><input type="radio" name="sexo" value="masculino" checked> Masculino<br>
+				          	  <input type="radio" name="sexo" value="feminino"> Feminino<br>
+				          	  <input type="radio" name="sexo" value="outro"> Outro<br>
+            		</fieldset><br>
+        E-mail:<br>
+  			   <input type="email" name="email" value="e-mail@provedor.com.br" required /> <br>
+        Deseja anexar algum arquivo: <br>
+        <input type="file" name="arq" />
+			</fieldset> <br>
+			<fieldset>
+				<legend>Dados do email</legend><br>
+				Assunto: <br>
+				<select>
+					<optgroup label="Reclamações">
+						<option value="reclamacoes_veiculos">Veículos</option>
+            <option value="reclamacoes_motoristas">Motoristas</option>
+            <option value="reclamacoes_horarios">Horários</option>
+					</optgroup>
+					<optgroup label="Sugestões">
+						<option value="sugestoes_rotas">Rotas</option>
+						<option value="sugestoes_viagens">Viagens</option>
+						<option value="sugestoes_vendas">Vendas</option>
+					</optgroup>
+					<optgroup label="Outros">
+						<option value="outros">Outros</option>
+					</optgroup>
+				</select>
+        		<br>
+				Mensagem: <br>
+				<textarea rows="10" cols="21" name="mensagem_email"></textarea>
+				<br>
+				Tipo de mensagem: <br>
+				<input type="checkbox" name="texto" value="texto" />Texto
+				<input type="checkbox" name="html" value="html" />HTML
+			</fieldset>
+      <br>
+			<fieldset>
+				<legend>Ações</legend>
+				<input type="submit" value="Enviar mensagem" style="width: 150px; text-align: center; padding: 2px;" />
+				<input type="reset" value="Limpar campos" style="width: 150px; text-align: center; padding: 2px;" />
+			</fieldset>
+      <br>
+			<fieldset style="width: 180px;">
+				Nota para a empresa:
+				<input type="range" name="nota" min="0" max="10" step="1" />
+			</fieldset>
+		</fieldset>
+	</form>
+	<br>
+ <a class="botao" href="index.html"> Voltar </a>
+ <footer>Viagens - Turismo - Transporte Universitário</footer>
+</body>
+</html>

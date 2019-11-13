@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="Author" content="Claudir de Jesus Kowal">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Orçamentos</title>
+	<link rel="shortcut icon" href="bus_ico.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+   <link href="https://fonts.googleapis.com/css?family=Concert+One|Merienda+One|Text+Me+One&display=swap" rel="stylesheet"> 
+		<body>
+		<div class="formularios">Formulário para Orçamentos</div><br>
+
+		<form action="http://localhost/claudir/orcamentos/" method="post">
+			<fieldset>
+				<legend>Preencha corretamente</legend><br>
+				<fieldset>
+					<legend>Dados pessoais</legend>
+					Nome:<br>
+					    <input type="text" name="nome" value="Insira seu nome" autofocus> <br>
+					Sobrenome:<br>
+					    <input type="text" name="sobrenome"><br>
+	        		Data de nascimento: <br>
+	          			<input type="date" name="data" min="2001-09-01" max="2019-10-01"><br>
+					Sexo:<br>
+					    <fieldset>
+					    	<input type="radio" name="sexo" value="masculino" checked> Masculino<br>
+					    	<input type="radio" name="sexo" value="feminino"> Feminino<br>
+					        <input type="radio" name="sexo" value="outro"> Outro<br>
+	            		</fieldset><br>
+	        		E-mail:<br>
+	  			   		<input type="email" name="email" value="e-mail@provedor.com.br" required /> <br>
+	        		Deseja anexar algum arquivo: <br>
+	        			<input type="file" name="arq" />
+						</fieldset> <br>
+						<fieldset>
+						<legend>Detalhes do orçamento</legend>
+					Assunto <br>
+						<select>
+							<optgroup label="Orçamento">
+								<option value="transporte_universitario">Transporte Universitário</option>
+	            				<option value="viagens">Viagens</option>
+	           					<option value="turismo">Turismo</option>
+							</optgroup>
+						</select><br>
+	                <br>
+					
+					Veículo <br>
+					<select>
+						<optgroup label="Van">
+							<option value="van_11">Van 11 lugares</option>
+	            			<option value="van_15">Van 15 lugares</option>
+	           				<option value="van_18">Van 18 lugares</option>
+						</optgroup>
+
+						<optgroup label="Microonibus">
+							<option value="micro23">Microonibus 23 lugares</option>
+	            			<option value="micro_26">Microonibus 26 lugares</option>
+	           			</optgroup>
+	           			
+	           			<optgroup label="Onibus">
+							<option value="micro_42">Onibus 42 lugares</option>
+	            			<option value="micro_46">Onibus 46 lugares</option>
+	           			</optgroup>
+					
+					</select><br>
+					Mensagem: <br>
+					<textarea rows="10" cols="22" name="mensagem_email" ></textarea><br>
+					<fieldset>
+						<legend> Ações</legend>
+						<input type="submit" value="Enviar mensagem" style="width: 150px; text-align: center; padding: 2px;" />
+						<input type="reset" value="Limpar campos" style="width: 150px; text-align: center; padding: 2px;" />
+					</fieldset>
+				</fieldset>
+			</fieldset>
+				<br><b>
+ 				<a class="botao" href="index.html"> Voltar </a></b>
+ 		</form>
+ 		<footer>Viagens - Turismo - Transporte Universitário</footer>
+ 		</body>
+</html>

@@ -4,12 +4,10 @@ font-size: 16px;
 background-color: #F0FFF0;
 }
 
-h1, h2 { color: steelblue; font-family: 'Merienda One', cursive;}
-
-h3 {color: orangered; font-family: 'Merienda One', cursive;}
+h1, h2, h3 { color: orange; font-family: 'Merienda One', cursive;}
 
 p {
-  font-family: 'Jomolhari', serif;
+  font-family: 'Concert One', cursive;
   }
 
 /*paragrafos do QUEM SOMOS*/
@@ -18,7 +16,7 @@ p {
         background-color: lightgrey;
       }
 
-header  {background-color: steelblue; 
+header, footer {background-color: rgb(255,120,0); 
 				font-family: 'Text Me One', sans-serif;
 				color: white;
 				padding: 15px;
@@ -26,15 +24,6 @@ header  {background-color: steelblue;
 				font-weight: bold;
 				text-align: center;
 				font-size: 28px;}
-
-footer  {
-    font-family: 'Text Me One', sans-serif;
-    color: steelblue;
-    padding: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    font-size: 28px;}
 				
 address {max-width: 250px;
 		margin: auto;
@@ -62,11 +51,11 @@ li.a a{
 }
 
 li.a a:hover:not(.ativo) {
-  background-color: white;
+  background-color: orange;
 }
 
 .ativo {
-  background-color: white;
+  background-color: orange;
 }
 
 /*------------------------*/
@@ -102,16 +91,16 @@ table {
 }
 
 th, td {
-  text-align: center;
+  text-align: right;
   padding: 8px;
 }
 th {
   color: white;
   font-size: 22px;
-  background-color: steelblue
+  background-color: orange;
 }
 
-tr:nth-child(even) {background-color: white;}
+tr:nth-child(even) {background-color: #E8E4A3;}
 
 /*DIV para o titulo dos formulários*/
 div.formularios {
@@ -166,7 +155,7 @@ div.sticky {
 /*Estilo para o contate-nos no meio do texto e para os botões VOLTAR*/
 
   .botao:link, .botao:visited {
-  background-color: blue;
+  background-color: rgb(255,120,0);
   color: white;
   padding: 5px 10px;
   text-align: center;
@@ -175,7 +164,7 @@ div.sticky {
 }
 
 .botao:hover, .botao:active {
-  background-color: white;
+  background-color: #F4B038;
 }
 
 /*Link -usado no index*/
@@ -184,7 +173,7 @@ a:link {
   color: green;
 }
 a:visited {
-  color: gray;
+  color: orangered;
 }
 a:hover {
   color: orange;
@@ -227,4 +216,3 @@ div.legenda {
   clear: both;
 }
 /*Fim da Galeria---------------------------------------------------*/
-
